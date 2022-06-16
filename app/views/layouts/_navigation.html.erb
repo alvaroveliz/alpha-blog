@@ -31,7 +31,7 @@
             Categories
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% if logged_in? %>
+            <% if logged_in? && current_user.admin? %>
               <li>
                 <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
               </li>

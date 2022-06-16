@@ -1,0 +1,5 @@
+<div class="mt-2">
+  <% categories.each do |category| %>
+    <%= link_to category.name, category_path(category), class: "badge rounded-pill bg-info" %>
+  <% end %>
+</div>
